@@ -1,0 +1,312 @@
+[
+  {
+    "name": "The Living Record",
+    "purpose": "Keep a person's account, witness material, work context, decisions and continuity through eight independent Places.",
+    "access_boundaries": "Private by default; no requirement to visit all Places, disclose underlying work or grant others access."
+  },
+  {
+    "name": "Room to Pause",
+    "purpose": "Permit pause, departure and return without making availability a condition of standing.",
+    "access_boundaries": "No passive recording, compulsory explanation, check-in, loss of standing or inferred consent; actual duties keep their lawful route."
+  },
+  {
+    "name": "Private Records Office",
+    "purpose": "Keep originals and appropriately authorized private evidence and correction history.",
+    "access_boundaries": "No public enumeration, cross-person access, unrestricted administrator inference or disclosure from a public receipt."
+  },
+  {
+    "name": "Public Records Office",
+    "purpose": "Offer authorized public research, cited records, corrections and contrary material.",
+    "access_boundaries": "Public edition allowlist only; private Nurture originals and reports are never made public by indexing."
+  },
+  {
+    "name": "New Work Security",
+    "purpose": "Protect attributable emerging work and continuity without converting support into privilege.",
+    "access_boundaries": "Money, title, family, support or contribution alone creates no access or design authority; valid grants remain operative."
+  },
+  {
+    "name": "Dependents' Rights",
+    "purpose": "Make standing, evidence, process and the full recovered protection collections usable without prejudging people.",
+    "access_boundaries": "No diagnosis, capacity ruling, universal veto, forced monitoring, automatic law claim or adverse score about a person."
+  },
+  {
+    "name": "Informal Pressure",
+    "purpose": "Preserve exact reports, boundaries, context and impacts without constructing a dossier or verdict.",
+    "access_boundaries": "No inferred coercion, motive or misconduct from role, money, number of people, silence or disagreement."
+  },
+  {
+    "name": "Misplaced Suspicion",
+    "purpose": "Help document suspicion, allegations and mischaracterized professional work without promoting them to findings.",
+    "access_boundaries": "Private intake is distinct from public guide; attachment and receipt capability cannot be assumed."
+  },
+  {
+    "name": "Design Against Crime",
+    "purpose": "Provide a separately governed independent reporting/research contract within its actual service remit.",
+    "access_boundaries": "Service receipt is not police incident number; no government submission, referral, endorsement or finding by default."
+  },
+  {
+    "name": "Responsible Charge",
+    "purpose": "Preserve independent professional judgment, actual responsibility and the scope of technical authority.",
+    "access_boundaries": "No license or authority inferred from self-label, property, payer, relationship or organizational title; preserve valid contracts and legal roles."
+  },
+  {
+    "name": "Receipt Logic",
+    "purpose": "Provide bounded evidence/receipt semantics across work, payment, boundaries and community.",
+    "access_boundaries": "Missing receipt is not breach; delivery, acknowledgment, acceptance, finding and payment are separate events."
+  },
+  {
+    "name": "Boundary Receipt Printer",
+    "purpose": "Render a bounded acknowledgment linked to a private boundary record, physically or digitally.",
+    "access_boundaries": "Issuance is not delivery, assent, service, truth or fault. Public QR/URL must not reveal private supporting material."
+  },
+  {
+    "name": "Nurture and its libraries",
+    "purpose": "Expose reusable library concepts and scoped owner adapters while preserving private early work.",
+    "access_boundaries": "Dream, Venture, Pattern, Patent, Instrument and Step remain distinct; private shelves are never public catalog entries."
+  },
+  {
+    "name": "Heard and its Experience Adapter",
+    "purpose": "Carry one listening/stewardship system through experience-appropriate interactions.",
+    "access_boundaries": "No passive listening; no product-specific authority forks; adapter cannot create or publish on a person's behalf."
+  },
+  {
+    "name": "Center for the Dream",
+    "purpose": "Offer practical resources for independent work and other needs without compelled disclosure.",
+    "access_boundaries": "No eligibility, placement or availability guarantee; no personal hardship used as incapacity or forced intake."
+  },
+  {
+    "name": "Practical Possibilities",
+    "purpose": "Help developers make practical next steps available while preserving independent work.",
+    "access_boundaries": "Suggestions do not accept terms, incur cost, claim eligibility or create a relationship; no forced personal disclosure."
+  },
+  {
+    "name": "Independent Work Protection",
+    "purpose": "Enforce bounded authority at effects affecting authorship, work and professional judgment.",
+    "access_boundaries": "Client-side allow is advisory; server effects require owner-side checks. Support/payment never implies design authority."
+  },
+  {
+    "name": "Promise-to-Step",
+    "purpose": "Bind authored promises to properly established instruments without treating action completion as promise fulfillment.",
+    "access_boundaries": "KEPT-BY distinct from BEARS-ON; candidate is not established; task action-step distinct from capital-S Step."
+  },
+  {
+    "name": "Journey Verification",
+    "purpose": "Determine scoped fulfillment from actual experience, governing standards and outcomes.",
+    "access_boundaries": "No self-reported completed flag, map completeness, passing schema or majority score becomes fulfilled experience."
+  },
+  {
+    "name": "Experience Stewardship",
+    "purpose": "Turn observed experience gaps into accountable correction and learning.",
+    "access_boundaries": "Reports, interpretations and findings distinct; no forced participant disclosure or automated human consensus."
+  },
+  {
+    "name": "Experience Maps",
+    "purpose": "Make actual functional paths, distinct reported experience and provenance inspectable.",
+    "access_boundaries": "One selected journey does not discard other projects/journeys; emotional path never inferred from functional telemetry."
+  },
+  {
+    "name": "Journey Registry",
+    "purpose": "Expose canonical journey identities, relationships, mental models and evidence through bounded projections.",
+    "access_boundaries": "No second registry; access-filter private journeys before search, counts or metadata."
+  },
+  {
+    "name": "Activity Centers",
+    "purpose": "Make each journey, correction and learning item accountable to its actual practice.",
+    "access_boundaries": "References journey IDs owned elsewhere; cannot rename, merge or create journeys or appoint authority by label."
+  },
+  {
+    "name": "Center of Excellence",
+    "purpose": "Assess quality and convert reviewed learning into reusable institutional knowledge.",
+    "access_boundaries": "No review board replacement or human-worth score; don't convert engagement into value."
+  },
+  {
+    "name": "Human Stewardship Guidelines",
+    "purpose": "Make exact governing sources, version applicability and conformance obligations executable without automating human judgment.",
+    "access_boundaries": "Guideline availability never grants access; permission decisions separate from human review outcomes."
+  },
+  {
+    "name": "Public Research",
+    "purpose": "Serve inspectable public research with primary sources, dates, methods and limits.",
+    "access_boundaries": "No private-case leakage, fabricated authority, universal coverage claim or repeated-source event inflation."
+  },
+  {
+    "name": "Pattern Development",
+    "purpose": "Develop patterns from evidence while distinguishing proposal, adoption and actual effect.",
+    "access_boundaries": "No automated misconduct label, diagnosis or institutional finding; deduplicate underlying events."
+  },
+  {
+    "name": "Community Support",
+    "purpose": "Enable practical support without giving participants control over one another's work.",
+    "access_boundaries": "No compulsory hardship story, public identity, diagnosis, gratitude, check-in or transfer of authorship; valid community rules still apply."
+  },
+  {
+    "name": "Research and Educational Resources",
+    "purpose": "Provide practical learning and licensed research in developers' existing environments.",
+    "access_boundaries": "No fake enrollment, credential, license access or completion; no forced internal application adoption."
+  },
+  {
+    "name": "Center for the Song",
+    "purpose": "Offer the wider audio instrumentation ecosystem as modular public contracts.",
+    "access_boundaries": "Independent applications may use relevant modules without adopting SongSketch, a label, publisher or distributor."
+  },
+  {
+    "name": "SongSketch integration adapter",
+    "purpose": "Connect SongSketch records while keeping reusable protections application-independent.",
+    "access_boundaries": "No SongSketch account required for local schemas; owner-service access must be explicit."
+  },
+  {
+    "name": "SongGraph",
+    "purpose": "Document a song's relationships and bounded evidence of its continuing online presence.",
+    "access_boundaries": "Public URL is not permission to copy protected media; no universal coverage or continuous-monitoring claim."
+  },
+  {
+    "name": "Song Invite",
+    "purpose": "Invite someone into a specified part of a song's life with bounded participation.",
+    "access_boundaries": "Invitation/access/acceptance/contribution/authorship/ownership/decision authority separate; no automatic forwarding or unrestricted access."
+  },
+  {
+    "name": "SongDev",
+    "purpose": "Provide development standards/specifications for building around songs while preserving identity.",
+    "access_boundaries": "No claim of deployment from tutorial/example; no need to rebuild a developer's product."
+  },
+  {
+    "name": "SongGit",
+    "purpose": "Preserve source material, versions and creative lineage.",
+    "access_boundaries": "Canonical spelling recovered as SongGit. SongGet remains an unconfirmed alias; no automatic rename."
+  },
+  {
+    "name": "Creative attribution and song provenance",
+    "purpose": "Keep authorship, performance, arrangement, production and source contribution legible.",
+    "access_boundaries": "Authorship is not automatically ownership; payment, generation, invitation or hosting confers neither."
+  },
+  {
+    "name": "Arrangement Credits",
+    "purpose": "Represent prepaid preparation entitlements without confusing them with artistic credit.",
+    "access_boundaries": "No charge, consumption, refund, transfer, expiry or changed policy from SDK inspection; no invented financial terms."
+  },
+  {
+    "name": "Song preservation",
+    "purpose": "Keep musical source and context independently recoverable.",
+    "access_boundaries": "No global permanence, bit-perfect playback or copyright transfer from storing a file."
+  },
+  {
+    "name": "Song research",
+    "purpose": "Research songs, versions, references and development context with bounded coverage.",
+    "access_boundaries": "No universal internet discovery, unlicensed bulk copying, auto attribution or monitoring."
+  },
+  {
+    "name": "Natural language and understanding",
+    "purpose": "Turn deliberately supplied language into inspectable interpretations while preserving exact originals.",
+    "access_boundaries": "No passive audio capture, inferred speaker authority, diagnosis or execution from fluent text."
+  },
+  {
+    "name": "Translation and localization editions",
+    "purpose": "Create meaning-preserving derived editions with block-level provenance and review.",
+    "access_boundaries": "No silent changes to promises, permissions, boundaries, legal effect, decisions or attribution; original remains canonical."
+  },
+  {
+    "name": "Terminology management",
+    "purpose": "Preserve governed concepts with contextual forms and explicit rejected literals.",
+    "access_boundaries": "No global blind synonym substitution or silent reintroduction of rejected terminology."
+  },
+  {
+    "name": "Accessible explanations",
+    "purpose": "Provide understandable explanations without changing the underlying decision or source.",
+    "access_boundaries": "No simplification that changes permission/obligation or infers comprehension, disability or capacity."
+  },
+  {
+    "name": "Internationalization and multilingual experience",
+    "purpose": "Make locale, direction, formatting and interaction usable across platforms.",
+    "access_boundaries": "Do not derive language from IP, country or timezone; display formatting never changes stored authority/time/money."
+  },
+  {
+    "name": "Correction and recovery",
+    "purpose": "Preserve traceable corrections, uncertainty and return after failure.",
+    "access_boundaries": "No silent overwrite, fabricated missing original, unconditional permanent retention or unrelated rights expansion."
+  },
+  {
+    "name": "Founding Record and venture provenance",
+    "purpose": "Preserve venture origin, intent and attributable development alongside song protections.",
+    "access_boundaries": "Origin/authorship distinct from assigned ownership; no duplication of Founding Ledger or Nurture owners."
+  },
+  {
+    "name": "Exact-edition publication and authorized public export",
+    "purpose": "Make precise approved public editions available without leaking private source.",
+    "access_boundaries": "Read-only v1 never publishes; preparation, approval, publish, delivery and readback remain separate."
+  },
+  {
+    "name": "Quality Assurance and Preventative Care instruments",
+    "purpose": "Expose distinct Dark Pattern Prevention, Context Displacement Prevention and Freelancer's Protection contracts.",
+    "access_boundaries": "Do not merge three protections or replace their original visual objects; avoid universal automated certification."
+  },
+  {
+    "name": "Internal concept to public meaning",
+    "purpose": "Preserve meaning while explaining internal concepts appropriately to public audiences.",
+    "access_boundaries": "No disclosure of private framework names simply because an internal source was supplied; no weaker substitute meaning."
+  },
+  {
+    "name": "Experience Center",
+    "purpose": "Provide an appropriate inspection/learning entry point across experience contracts.",
+    "access_boundaries": "Do not alias to CoE, Activity Centers, or Experience Stewardship Room without canonical source reconciliation."
+  },
+  {
+    "name": "Engineering, building-code and standards research",
+    "purpose": "Help find applicable authoritative standards and educational references with licensing and jurisdiction intact.",
+    "access_boundaries": "No unlicensed redistribution, code-compliance certification or engineering/legal judgment from retrieval alone."
+  },
+  {
+    "name": "Offline validation and public preservation",
+    "purpose": "Keep SDK contracts, examples and local protections useful after company-domain loss.",
+    "access_boundaries": "No secret or private source in public pack; no cloud availability claim from local success."
+  },
+  {
+    "name": "HeadsUp and attention protection",
+    "purpose": "Give timely, bounded information about what matters while protecting attention.",
+    "access_boundaries": "No passive surveillance, manufactured urgency or unrelated behavioral profile."
+  },
+  {
+    "name": "Living Laboratory and instrument evidence",
+    "purpose": "Carry observations, measurements, negative results and development standing through the existing instrument registry.",
+    "access_boundaries": "Private experiments and source/IP remain owner-controlled; no second registry."
+  },
+  {
+    "name": "Posterity Reader and whole-edition reading",
+    "purpose": "Provide accessible whole editions with canonical original and authorized translations preserved.",
+    "access_boundaries": "Only approved public/authorized text; no private manuscript or translation publication implied."
+  },
+  {
+    "name": "Governance Support",
+    "purpose": "Preserve governed commitments and the authority/process/evidence of amendments and actions.",
+    "access_boundaries": "No title-based blanket authority or mutation of protected original commitments."
+  },
+  {
+    "name": "NapkinSketch capture and venture founding adapter",
+    "purpose": "Let developers preserve an original idea and refer to deliberate venture founding without requiring NapkinSketch adoption.",
+    "access_boundaries": "Capture only offered/authorized material; private ideas stay private; founding is deliberate and scoped."
+  },
+  {
+    "name": "LOX commissioned and memorial work stewardship adapter",
+    "purpose": "Preserve entrusted commissioned/memorial material, independent identity and deliberate publication choices.",
+    "access_boundaries": "Private by default; no automatic public catalog, training permission or merging of independent LOX identity into another product."
+  },
+  {
+    "name": "Non-destructive song arrangement and editing",
+    "purpose": "Preserve master recordings and versioned arrangement/edit decisions across applications.",
+    "access_boundaries": "No write over the only original; contribution and media access separate; publishing/export need scope."
+  },
+  {
+    "name": "Dark Pattern Prevention Instrument",
+    "purpose": "Make manipulative interaction patterns inspectable while preserving a person's agency.",
+    "access_boundaries": "No diagnosis of designer/user intent or automatic verdict from a visual pattern name."
+  },
+  {
+    "name": "Context Displacement Prevention Instrument",
+    "purpose": "Keep original context available when work is quoted, summarized or reframed.",
+    "access_boundaries": "No exposure of private context beyond permissions; no summary replaces original."
+  },
+  {
+    "name": "Freelancer’s Protection Instrument",
+    "purpose": "Keep independent work, context and a person's circumstances distinct while supporting continuity.",
+    "access_boundaries": "No compulsory disclosure of hardship or private client material; support does not convey design authority."
+  }
+]

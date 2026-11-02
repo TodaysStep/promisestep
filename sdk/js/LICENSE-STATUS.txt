@@ -1,0 +1,4 @@
+PromiseStep SDK — distribution standing
+The founder has authorized a public, open-source project. No specific license grant was recovered for this new release. This package preserves that unresolved decision rather than assigning a license to private infrastructure, documentation, or third-party work.
+This development preview is supplied for review. The final redistribution license remains a release gate. No patent grant, third-party license, or license for private records is implied.
+The implementation in index.mjs was newly authored for PromiseStep. It does not copy the private realm implementation. Human Stewardship review questions retain their original authored meaning.
