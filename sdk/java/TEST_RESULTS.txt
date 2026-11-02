@@ -1,0 +1,1 @@
+PromiseStep Java public-read client: 13 checks passed (loopback HTTP only; no production claim)
