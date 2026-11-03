@@ -27,7 +27,7 @@ class PublicAPIClient:
         except (ValueError, TypeError) as error:
             raise PromiseStepError("INVALID_INPUT", "Invalid base URL.") from error
         local = parsed.scheme == "http" and parsed.hostname in ("127.0.0.1", "localhost", "::1")
-        if not ((parsed.scheme == "https" and parsed.hostname) or local) or parsed.username or parsed.password or parsed.query or parsed.fragment or not parsed.path.endswith("/"):
+        if not ((parsed.scheme == "https" and parsed.hostname) or local) or parsed.username or parsed.password or parsed.query or parsed.fragment or parsed.path != "/api/v1/":
             raise PromiseStepError("INVALID_INPUT", "Use an HTTPS URL with a trailing slash and no credentials, query, or fragment.")
         if isinstance(timeout, bool) or not isinstance(timeout, (float, int)) or not 0 < timeout <= 60:
             raise PromiseStepError("INVALID_INPUT", "Timeout must be between 0 and 60 seconds.")

@@ -343,7 +343,7 @@ export class PublicAPIClient {
   #base; #fetch; #timeout;
   constructor({ baseURL = 'https://promisestep.com/api/v1/', fetch: fetcher = globalThis.fetch, timeoutMs = 10000 } = {}) {
     const u = new URL(baseURL); need(u.protocol === 'https:' || (u.protocol === 'http:' && ['127.0.0.1', 'localhost', '[::1]'].includes(u.hostname)), 'INVALID_INPUT', 'Use HTTPS or local loopback.');
-    need(!u.username && !u.password && !u.search && !u.hash && u.pathname.endsWith('/'), 'INVALID_INPUT', 'Base URL must have a trailing slash and no credentials, query, or fragment.');
+    need(!u.username && !u.password && !u.search && !u.hash && u.pathname === '/api/v1/', 'INVALID_INPUT', 'Base URL must be /api/v1/ with no credentials, query, or fragment.');
     need(typeof fetcher === 'function' && Number.isFinite(timeoutMs) && timeoutMs >= 1 && timeoutMs <= 60000, 'INVALID_INPUT', 'A fetch transport and bounded timeout are required.');
     this.#base = u; this.#fetch = fetcher; this.#timeout = timeoutMs;
   }

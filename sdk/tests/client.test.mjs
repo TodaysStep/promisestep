@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { PublicAPIClient, PromiseStepError } from '../js/index.mjs';
 const code = c => e => e instanceof PromiseStepError && e.code === c;
 const response = data => new Response(JSON.stringify(data), { headers: { 'content-type': 'application/json' } });
-for (const url of ['http://example.test/api/', 'https://user:secret@example.test/api/', 'https://example.test/api/?x=y', 'https://example.test/api/#x', 'https://example.test/api']) test(`refuses unsafe API base: ${url.replace('secret','redacted')}`, () => assert.throws(() => new PublicAPIClient({ baseURL: url }), code('INVALID_INPUT')));
+for (const url of ['http://example.test/api/', 'https://user:secret@example.test/api/', 'https://example.test/api/?x=y', 'https://example.test/api/#x', 'https://example.test/api', 'https://example.test/other/', 'https://example.test/api/']) test(`refuses unsafe API base: ${url.replace('secret','redacted')}`, () => assert.throws(() => new PublicAPIClient({ baseURL: url }), code('INVALID_INPUT')));
 test('loopback development base is explicit and supported', () => assert.doesNotThrow(() => new PublicAPIClient({ baseURL: 'http://127.0.0.1:4040/api/v1/' })));
 for (const timeoutMs of [0, -1, 60001, Infinity, NaN]) test(`refuses invalid timeout: ${timeoutMs}`, () => assert.throws(() => new PublicAPIClient({ timeoutMs }), code('INVALID_INPUT')));
 test('public client uses GET, omits credentials and refuses redirects', async () => {

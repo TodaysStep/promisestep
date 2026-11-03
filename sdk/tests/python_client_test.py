@@ -5,10 +5,11 @@ from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'python'))
 from promisestep import PublicAPIClient,PromiseStepError
 class Handler(BaseHTTPRequestHandler):
+ mode='normal'
  def log_message(self,*args): pass
  def do_GET(self):
-  mode=self.path.split('/')[1];content=b'{"ready":true}';mime='application/json';code=200
-  if mode=='redirect':self.send_response(302);self.send_header('Location','/normal/health');self.end_headers();return
+  mode=type(self).mode;content=b'{"ready":true}';mime='application/json';code=200
+  if mode=='redirect':self.send_response(302);self.send_header('Location','/api/v1/health');self.end_headers();return
   if mode=='html':mime='text/html';content=b'<html>not a service</html>'
   if mode=='bad':content=b'{broken'
   if mode=='nan':content=b'{"value":NaN}'
@@ -18,19 +19,19 @@ class Handler(BaseHTTPRequestHandler):
 class ClientTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cls.server=ThreadingHTTPServer(('127.0.0.1',0),Handler);cls.t=threading.Thread(target=cls.server.serve_forever,daemon=True);cls.t.start();cls.base=f'http://127.0.0.1:{cls.server.server_port}/'
+  cls.server=ThreadingHTTPServer(('127.0.0.1',0),Handler);cls.t=threading.Thread(target=cls.server.serve_forever,daemon=True);cls.t.start();cls.base=f'http://127.0.0.1:{cls.server.server_port}/api/v1/'
  @classmethod
  def tearDownClass(cls):cls.server.shutdown();cls.server.server_close()
- def test_success(self):self.assertEqual(PublicAPIClient(self.base+'normal/').get('health'),{'ready':True})
+ def test_success(self):self.assertEqual(PublicAPIClient(self.base).get('health'),{'ready':True})
  def test_no_query_credentials_fragment_in_base(self):
-  for base in ['http://untrusted.test/api/','https://person:password@example.test/','https://example.test/?key=secret','https://example.test/#fragment','https://example.test/api']:
+  for base in ['http://untrusted.test/api/','https://person:password@example.test/','https://example.test/?key=secret','https://example.test/#fragment','https://example.test/api', 'https://example.test/other/', 'https://example.test/api/']:
    with self.subTest(base=base),self.assertRaises(PromiseStepError):PublicAPIClient(base)
  def test_timeout_constraints(self):
   for timeout in [True,0,-1,61,float('nan'),float('inf'),'10']:
    with self.subTest(timeout=timeout),self.assertRaises(PromiseStepError):PublicAPIClient(timeout=timeout)
  def test_no_arbitrary_resource(self):
   for resource in ['../private','records','https://other.test','guidelines?data=private',1]:
-   with self.subTest(resource=resource),self.assertRaises(PromiseStepError):PublicAPIClient(self.base+'normal/').get(resource)
+   with self.subTest(resource=resource),self.assertRaises(PromiseStepError):PublicAPIClient(self.base).get(resource)
  def test_redirect_refused(self):self.expect_error('redirect','UNEXPECTED_REDIRECT')
  def test_http_error(self):self.expect_error('error','HTTP_ERROR')
  def test_html_not_json(self):self.expect_error('html','INVALID_RESPONSE')
@@ -38,6 +39,9 @@ class ClientTests(unittest.TestCase):
  def test_nonfinite_json(self):self.expect_error('nan','INVALID_RESPONSE')
  def test_size_limit(self):self.expect_error('big','LIMIT_EXCEEDED')
  def expect_error(self,mode,code):
-  with self.assertRaises(PromiseStepError) as c:PublicAPIClient(self.base+mode+'/').get('health')
-  self.assertEqual(c.exception.code,code)
+  Handler.mode=mode
+  try:
+   with self.assertRaises(PromiseStepError) as c:PublicAPIClient(self.base).get('health')
+   self.assertEqual(c.exception.code,code)
+  finally: Handler.mode='normal'
 if __name__=='__main__':unittest.main(verbosity=2)
