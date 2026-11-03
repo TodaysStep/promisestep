@@ -45,3 +45,16 @@ This addendum supersedes only earlier local test totals; it does not supersede t
 - **Still open:** exact newest preview source recovery/reconciliation; real production browser/download/Safari checks, owner-effect enforcement, distribution licensing, and independently commissioned constitutional review.
 
 Do not promote or overwrite the newer preview.2 from this earlier-derived candidate. Keep original receipts and rollback routes.
+
+
+## Safe Restore guard source checkpoint — 2026-11-02 Pacific / 2026-11-03 UTC
+
+- Added `assessRecordBookImport` enforcement to the browser lab **Restore button** itself, not only file import. A saved old export cannot overwrite newer live corrections. Added actual desktop and iPhone-like simulated browser regression, plus generator/source-status tests.
+- The full independently rebuildable source archive with both the updated source and compiled Pages Worker is in Library `/PromiseStep/PromiseStep_Safe_Restore_Guard_Source_and_Test_2026-11-02.zip`, **251 files**, ZIP SHA-256 `bfde3aaa1d97ab72329186ea7066df15082b14e52a6b44dd091bc954be7fa789`. Library visibility verified; the archive was extracted to a clean directory, rebuilt, and all checks passed.
+- Rebuilt worker SHA-256 `756bd4433df72d7e496d123cec42e6cbf4ac3f95b9495b714e0dcda0da4c24bb` (69 static files, 68 public JSON resources, 16 original photographs).
+- **Local verified** 130/130 SDK, 24/24 website, Python 10/10, Java 13/13, strict TypeScript, clean offline npm install, desktop/mobile simulated browser restoration tests and source rebuild matching compiled Worker SHA. All 32 on-disk public images (16 photos + 13 SVGs + 3 instrument images) match the original recovered production source exactly.
+- Updated public release-status generator to recognize the already-existing public GitHub repository without representing the partial branch as complete recovery, licensed open source, or the newer preview's exact source.
+- Cloudflare production `f95c5b61-45e4-45cb-bf2a-302c2a94da83`, and the newer independent preview `61a11ae8-0999-4e55-9a3b-95e2ebcc5ef4`, remain untouched. This candidate is **NOT deployed**. Do not replace the preview.2 `RECOVERY_CONFLICT` behavior without source/behavior reconciliation.
+- **Open:** current preview exact source recovery; production browser, HTTPS package download, physical Safari, actual owner-service authority enforcement, founder license selection, independently commissioned Heard/Constitutional Review. No registries updated or consensus claimed.
+
+Previous receipts and the originally verified provider baseline remain operative.
