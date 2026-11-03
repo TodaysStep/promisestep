@@ -166,6 +166,25 @@ export class RecordBook {
     return book;
   }
 }
+/** Inspect a validated incoming book without replacing active work. This is not an authority or backup receipt. */
+export async function assessRecordBookImport(currentBook, incomingBook) {
+  need(currentBook === null || currentBook instanceof RecordBook, 'INVALID_INPUT', 'Current work must be a RecordBook or null.');
+  need(incomingBook instanceof RecordBook, 'INVALID_INPUT', 'Incoming work must first pass RecordBook.restore validation.');
+  const incoming = (await incomingBook.snapshot()).events;
+  const current = currentBook === null ? [] : (await currentBook.snapshot()).events;
+  let matchingPrefixEvents = 0;
+  while (matchingPrefixEvents < Math.min(current.length, incoming.length) &&
+         canonicalJSON(current[matchingPrefixEvents]) === canonicalJSON(incoming[matchingPrefixEvents])) matchingPrefixEvents++;
+  const state = currentBook === null ? 'new_book' :
+    matchingPrefixEvents !== Math.min(current.length, incoming.length) ? 'conflicting_history' :
+    incoming.length < current.length ? 'older_snapshot' :
+    incoming.length === current.length ? 'identical' : 'extends_current';
+  const importPreservesCurrent = ['new_book', 'identical', 'extends_current'].includes(state);
+  return freeze({ state, importPreservesCurrent, requiresReconciliation: !importPreservesCurrent,
+    currentEvents: current.length, incomingEvents: incoming.length, matchingPrefixEvents,
+    changesPermissions: false, authenticatesAuthorship: false, writesData: false });
+}
+
 export async function createArchive(payload) {
   const value = copy(payload);
   const archive = { format: 'promisestep/archive', formatVersion, algorithm: 'SHA-256', digest: await digest(value), payload: value };
@@ -343,7 +362,7 @@ export class PublicAPIClient {
   #base; #fetch; #timeout;
   constructor({ baseURL = 'https://promisestep.com/api/v1/', fetch: fetcher = globalThis.fetch, timeoutMs = 10000 } = {}) {
     const u = new URL(baseURL); need(u.protocol === 'https:' || (u.protocol === 'http:' && ['127.0.0.1', 'localhost', '[::1]'].includes(u.hostname)), 'INVALID_INPUT', 'Use HTTPS or local loopback.');
-    need(!u.username && !u.password && !u.search && !u.hash && u.pathname === '/api/v1/', 'INVALID_INPUT', 'Base URL must be /api/v1/ with no credentials, query, or fragment.');
+    need(!u.username && !u.password && !u.search && !u.hash && u.pathname.endsWith('/'), 'INVALID_INPUT', 'Base URL must have a trailing slash and no credentials, query, or fragment.');
     need(typeof fetcher === 'function' && Number.isFinite(timeoutMs) && timeoutMs >= 1 && timeoutMs <= 60000, 'INVALID_INPUT', 'A fetch transport and bounded timeout are required.');
     this.#base = u; this.#fetch = fetcher; this.#timeout = timeoutMs;
   }

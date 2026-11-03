@@ -54,7 +54,11 @@ if (lab) {
     say('The in-memory working copy is cleared for this exercise. A recovery archive is still held in this page. Restore it next; this does not simulate a server backup.');
   }));
   $('[data-lab-restore]').addEventListener('click', run(async () => {
-    const restored = await S.RecordBook.restore(archive); book = restored;
+    const restored = await S.RecordBook.restore(archive);
+    const check = await S.assessRecordBookImport(book, restored);
+    if (!check.importPreservesCurrent)
+      throw new S.PromiseStepError('RECONCILIATION_REQUIRED', 'The saved recovery copy is ' + check.state + ' and cannot replace newer or different working history');
+    book = restored;
     say('The working copy was restored from the archive, including its original and corrections. No website account or remote save was involved.');
   }));
   $('[data-lab-file]').addEventListener('change', run(async () => {
@@ -67,12 +71,9 @@ if (lab) {
       if (!history.length) throw new S.PromiseStepError('NOT_FOUND', 'This file contains another project; it was not substituted for the example');
       if (!history.every(e => typeof e.payload?.text === 'string' && e.payload.text.length <= 2000))
         throw new S.PromiseStepError('INVALID_ARCHIVE', 'This example requires text in each imported revision');
-      if (book) {
-        const current = (await book.snapshot()).events;
-        const incoming = (await restored.snapshot()).events;
-        if (current.length > incoming.length || current.some((event, index) => S.canonicalJSON(event) !== S.canonicalJSON(incoming[index])))
-          throw new S.PromiseStepError('RECONCILIATION_REQUIRED', 'The selected file would replace current work. Export your current example before deliberately clearing it, then import the file');
-      }
+      const importCheck = await S.assessRecordBookImport(book, restored);
+      if (!importCheck.importPreservesCurrent)
+        throw new S.PromiseStepError('RECONCILIATION_REQUIRED', 'The selected file would replace current work (' + importCheck.state + '). Export your current example before deliberately clearing it, then import the file');
       // Only a proven same-chain extension may replace an active example.
       const nextArchive = await restored.export();
       const nextPromise = S.PromiseStep.promise({ id: 'demo:promise', name: 'Return to my work', intention: 'Preserve the imported original.', criteria: [{ id: 'original-preserved', description: 'The imported original remains available.' }] });

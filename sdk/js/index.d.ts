@@ -29,6 +29,18 @@ export declare class RecordBook {
   export(): Promise<Archive<BookSnapshot>>;
   static restore(archive: string | Archive<BookSnapshot>, options?: BookOptions): Promise<RecordBook>;
 }
+export interface RecordBookImportAssessment {
+  readonly state: 'new_book'|'identical'|'extends_current'|'older_snapshot'|'conflicting_history';
+  readonly importPreservesCurrent: boolean;
+  readonly requiresReconciliation: boolean;
+  readonly currentEvents: number;
+  readonly incomingEvents: number;
+  readonly matchingPrefixEvents: number;
+  readonly changesPermissions: false;
+  readonly authenticatesAuthorship: false;
+  readonly writesData: false;
+}
+export declare function assessRecordBookImport(currentBook: RecordBook|null, incomingBook: RecordBook): Promise<RecordBookImportAssessment>;
 export declare function createArchive<T extends JSONValue>(payload: T): Promise<Archive<T>>;
 export declare function readArchive<T = JSONValue>(archive: string | Archive<T>): Promise<T>;
 export interface EncryptedArchive { readonly format: 'promisestep/encrypted-archive'; readonly formatVersion: 1; readonly cipher: 'AES-256-GCM'; readonly kdf: 'PBKDF2-SHA256'; readonly iterations: 600000; readonly salt: string; readonly iv: string; readonly ciphertext: string; }
