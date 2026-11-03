@@ -53,6 +53,8 @@ Run mobile and browser checks proportionately. Compare packaged downloads and ch
 
 ## Release path
 
-Verified source & authoring provenance → reconciliation with the actual preview.2 producing workspace → protected build → preview/hosted HTTPS journey testing → exact owner-boundary permission/effect checks → fresh Pages head/rollback check → smallest same-project deployment → production verification → founder acceptance → independent review/constitutional records.
+**Before deployment:** recover and authenticate preview.2's complete producing source → reconcile every accepted later change with the verified 488-member source → rebuild and check preserved assets/releases → verify actual hosted HTTPS developer journeys and owner boundaries → inspect the existing Pages HEAD, route ownership and rollback. Do not substitute public preview.2 download fragments for full authoring-source custody.
 
-Never swap the missing source for a publicly downloaded SDK ZIP. Never label a locally built Worker as deployed.
+**Authorized production change:** deploy the smallest reversible change to the existing `promisestep` Pages project; do not use GitHub Actions, create a second environment or silently promote the partial GitHub branch.
+
+**After deployment:** verify live production behavior and HTTPS package bytes, perform physical Safari and applicable service-effect tests, obtain genuine independent Heard/Constitutional review and founder acceptance, then reconcile formal registers **only after** explicit founder approval. A local candidate, a documentation PR or provider success status is not completion.
