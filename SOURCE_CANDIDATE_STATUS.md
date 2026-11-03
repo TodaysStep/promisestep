@@ -32,3 +32,16 @@ The complete non-public release-builder package, original 16 photos and 33 visua
 - Independent Human Steward commission, conclusions, constitutional review, and founder acceptance remain open. Charter reads are not commissions.
 
 Preservation rule: no private records, passwords, proprietary third-party content, new paid services, shared Worker replacement, or changes to current production until the newer source is reconciled and tested. No formal journey/register reconciliation without founder approval.
+
+
+## Addendum — 2026-11-02: public API boundary parity and Java client
+
+This addendum supersedes only earlier local test totals; it does not supersede the preview.2 protection or any accepted production source.
+
+- **Source-only tests:** 124 JavaScript SDK + 22 website/release + 10 Python + 13 Java 21+ loopback checks, all passing; strict TypeScript passing. JavaScript/ Python reference clients now require the exact `/api/v1/` root, matching the Java client.
+- **Full independent source candidate:** Library `/PromiseStep/PromiseStep_API_Boundary_And_Java_Source_Candidate_2026-11-02.zip`, SHA-256 `7eaec6535275357791ba11e047296876dcc2c1d9b633f4535e77c789dff45a75`. Contains 245 source/build/tests/dist files, including all 16 original photographs.
+- **New standalone compiled candidate Worker** SHA-256 `e83135e3d89f04d3315d5e2b87422d3e7f47adeb4d139cc8d49eda8f559068ac` produced identically on two builds. It is **NOT deployed**, **NOT** the current production Worker, and **NOT** the newer preview.2 Worker.
+- **Source changes and Java tests** committed to this recovery-only branch; no release, source-replacement, GitHub Action or service permission change.
+- **Still open:** exact newest preview source recovery/reconciliation; real production browser/download/Safari checks, owner-effect enforcement, distribution licensing, and independently commissioned constitutional review.
+
+Do not promote or overwrite the newer preview.2 from this earlier-derived candidate. Keep original receipts and rollback routes.
