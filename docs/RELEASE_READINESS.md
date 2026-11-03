@@ -19,13 +19,22 @@
 - Separate hosted preview.2 `61a11ae8-0999-4e55-9a3b-95e2ebcc5ef4`.
 - The authentic preview.2 *public* SDK ZIP, tarball, Python archive, portal files and checksums were recovered and tested. **The entire producing workspace (website, builder, tests and compiled Worker source) was not.** Public output is not equivalent to its producing source.
 
-## Must-pass gates before release
+## Pre-deployment safety gates
 
-1. **Source custody and reconciliation:** recover the complete authentic preview.2 authoring source with hash/provenance; compare against this source and retain all accepted later corrections including `RECOVERY_CONFLICT`, Python archive interoperability, reason/focus, pause/clear, mobile and original art.
-2. **Scope & privacy:** no private records or proprietary third-party source; maintain `UNLICENSED`, read-only `/api/v1/`, no owner-service grants inferred from local roles.
-3. **Hosted journey:** from the real HTTPS URL download/install a package, run a first step, create original, append reasoned correction, refuse out-of-scope effect, export, pause, restore, refuse older/conflicting/tampered archive, safely Clear and return. Verify mobile and physical Safari separately.
-4. **Releases & rollback:** recheck the actual provider HEAD, route owner and immutable downloads; retain a revert path; deploy only the smallest change to the existing Pages project.
-5. **Independent and founder acceptance:** separate Heard stewardship and Constitutional Review from read-only capability diagnostics; physical device and actual owner effects remain open; obtain founder observation and explicit acceptance before formal registries.
+The following are conditions for a production write, not claims that a local build has already earned release authority.
+
+1. **Authentic source and reconciliation:** recover the complete preview.2 producing website/build/Worker workspace with provenance and bytes; compare it with the latest verified 488-member source. Preserve every accepted correction, including `RECOVERY_CONFLICT`, Python archives, authored reasons, accessibility, protected Clear, imports, mobile, original art and prior release bytes.
+2. **Actual authority and privacy:** preserve `UNLICENSED`, the exact read-only `/api/v1/` boundary, private records, and owner-service permission checks. No local roles or example grants may trigger externally owned effects.
+3. **Hosted preview acceptance:** verify real HTTPS package downloads and installed examples, original → reasoned correction → scoped refusal → export → pause/restore → older/conflicting/tampered import refusal → protected Clear → return. Verify native browser behavior and mobile interaction without a test-only SHA bridge; identify physical Safari as an explicit separate check, not an assumed pass.
+4. **Reversible same-project cutover:** refresh Cloudflare deployment identity and route ownership immediately before a write; preserve published preview.1 bytes, preview.2, its recovery path, the independent sharing Worker and a tested rollback. Do not change DNS, infrastructure or GitHub Actions.
+
+**Hold production while authentic source custody and hosted reconciliation remain missing.** The current local Worker is not a safe replacement for a later un-reconciled hosted deployment.
+
+## Production verification and constitutional completion (after an authorized release)
+
+A successful deployment is not final acceptance. Check the actual production domain's complete developer journey, current HTTPS package hashes, read-only API refusal and relevant real-service permission/effect boundaries. Record any physical iPhone Safari observation separately from simulated mobile results.
+
+Independent Heard stewardship and Constitutional Review require genuine commissioning and review, not a capability read or self-reported consensus. Founder production acceptance follows an observable working result. Only after the founder explicitly approves should the existing formal journeys, models, registers and handoff records be reconciled. Do not treat these post-deployment confirmations as already completed *pre-deployment* tests, nor make founder production acceptance a logically impossible prerequisite to observing production.
 
 ## Non-goals
 
