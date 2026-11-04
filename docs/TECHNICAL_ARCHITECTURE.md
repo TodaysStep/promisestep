@@ -25,7 +25,7 @@ promisestep/
 
 **Editorial experience.** Public pages and the existing source-built navigation carry the method, the approved visual work, researched resources and learning paths. Site builders should change authored source, not patch generated `dist/` HTML without a corresponding source change.
 
-**Developer experience.** The SDK is local-first: an original is retained, corrections append, boundaries return scoped results, and compact canonical archives allow return. Whole-book assessment and protected Clear prevent older/conflicting content from silently replacing more recent work. Python archive/interchange support and correction-reason continuity were selectively reconciled from authentic preview.2 public bytes; this is not a recovery of preview.2's full authoring tree.
+**Developer experience.** The SDK is local-first: an original is retained, corrections append, boundaries return scoped results, and compact canonical archives allow return. Whole-book assessment and protected Clear prevent older/conflicting content from silently replacing more recent work. Python archive/interchange support, correction-reason continuity and the original `RECOVERY_CONFLICT` refusal code were selectively reconciled from authentic preview.2 public bytes; this is not a recovery of preview.2's full authoring tree.
 
 **Public reference API.** The `/api/v1/` root is exact and **read-only**. Keep method restrictions, bounded reads/timeouts and rejection of duplicate JSON. Do not treat a locally constructed role or grant as authority to make an external service perform an effect.
 
@@ -53,7 +53,7 @@ Run mobile and browser checks proportionately. Compare packaged downloads and ch
 
 ## Release path
 
-**Before deployment:** recover and authenticate preview.2's complete producing source → reconcile every accepted later change with the verified 488-member source → rebuild and check preserved assets/releases → verify actual hosted HTTPS developer journeys and owner boundaries → inspect the existing Pages HEAD, route ownership and rollback. Do not substitute public preview.2 download fragments for full authoring-source custody.
+**Before deployment:** recover and authenticate preview.2's complete producing source → reconcile every accepted later change with the verified 489-member source → rebuild and check preserved assets/releases → verify actual hosted HTTPS developer journeys and owner boundaries → inspect the existing Pages HEAD, route ownership and rollback. Do not substitute public preview.2 download fragments for full authoring-source custody.
 
 **Authorized production change:** deploy the smallest reversible change to the existing `promisestep` Pages project; do not use GitHub Actions, create a second environment or silently promote the partial GitHub branch.
 
