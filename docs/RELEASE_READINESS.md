@@ -10,7 +10,8 @@
 - Rebuilt Worker SHA-256: `97a52edf3ce8d146edb87d5ac75ee4a2cffd7788c6ef2f99614913de3032fe40`.
 - The source receipt reports **88/88 website tests** (including preview.2 `RECOVERY_CONFLICT` code compatibility on refused import/restore, without changing newer refusal logic) and isolated layout/browser checks. The parent receipts report **171/171 JS SDK**, **38/38 Python**, strict TypeScript and focused restore tests; these are historical evidence for unchanged portions, not new hosted acceptance.
 - Verified package inventory: 81 public static assets, 68 public JSON reference resources, 32 retained original artwork files, 11 byte-identical immutable preview.1 release artifacts.
-- The previous 488-member source (`77118b97…`) remains the exact parent. Authentic preview.2 used `RECOVERY_CONFLICT` for unsafe Restore/import, while the parent displayed `RECONCILIATION_REQUIRED`. The current source restores the original code on those two branches; the newer Create guard still uses `RECONCILIATION_REQUIRED`, and import safety is unchanged. Two focused assertions failed against the parent and passed after repair; clean source restoration and changed-path local browser checks passed.\n- Earlier sources and evidence remain intact; the 471-member authoring candidate is historical, not this source's replacement.
+- The previous 488-member source (`77118b97…`) remains the exact parent. Authentic preview.2 used `RECOVERY_CONFLICT` for unsafe Restore/import, while the parent displayed `RECONCILIATION_REQUIRED`. The current source restores the original code on those two branches; the newer Create guard still uses `RECONCILIATION_REQUIRED`, and import safety is unchanged. Two focused assertions failed against the parent and passed after repair; clean source restoration and changed-path local browser checks passed.
+- Earlier sources and evidence remain intact; the 471-member authoring candidate is historical, not this source's replacement.
 
 ## Provider standing (previous verified observation, not a live lease)
 
@@ -40,4 +41,4 @@ Independent Heard stewardship and Constitutional Review require genuine commissi
 
 No Lovable writes, GitHub Actions, paid browser, new Pages project, DNS change, service permission change, release relabeling, license invention, npm/PyPI publication, Step002 rerun or status-only receipts. Do not use a successful local build as permission to overwrite the hosted preview.
 
-**A draft GitHub documentation branch is not a deployment, license, restored production source, or release acceptance.**
+**Publishing this documentation to GitHub does not deploy the website, grant a license, recover production source, or establish release acceptance.**
