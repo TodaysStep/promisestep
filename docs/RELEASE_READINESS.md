@@ -1,5 +1,18 @@
 # PromiseStep — verified standing and release gates
 
+**Latest standing: November 4, 2026 — locally verified, NOT DEPLOYED.** The earlier November 3 verification below remains history.
+
+## Latest retained source (November 4)
+
+- Source: `PromiseStep_Preview2_Python_Install_Continuity_Source_2026-11-04.zip`; **19,276,030 bytes and 492 ZIP members**.
+- Independent archive readback passed ZIP integrity and SHA-256 `99f1c62e0c81633f0311cdbf4de4922c5417f45dec6c9ab54c77d941c7c3bc2a`.
+- This successor restores the existing Python installation metadata and documentation. Its receipt reports offline package installation, preservation/recovery checks, and **88/88 website tests**. These are local results, not hosted or Safari acceptance.
+- Source history, original artwork and immutable prior release artifacts remain preserved. The 489-member recovery-conflict source described below is historical, not the current candidate.
+- On November 4, a fresh authenticated Cloudflare read still showed production `f95c5b61-45e4-45cb-bf2a-302c2a94da83` (preview.1 release) and separate preview.2 `61a11ae8-0999-4e55-9a3b-95e2ebcc5ef4` successful and unchanged. The existing Pages project uses **Direct Upload**, not an automatic deployment from this GitHub repository.
+- Full original preview.2 website/builder/Worker producing source remains unrecovered; its public download artifacts do not establish authoring-source identity. **Do not publish the older-derived worker over the newer hosted behavior before reconciliation.**
+
+## Prior November 3 source evidence (historical)
+
 **Source standing: November 3, 2026, updated for preview.2 recovery-conflict compatibility; locally built and tested; NOT deployed.** This document is a scoped receipt index, not production approval.
 
 ## Verified local source
@@ -24,7 +37,7 @@
 
 The following are conditions for a production write, not claims that a local build has already earned release authority.
 
-1. **Authentic source and reconciliation:** recover the complete preview.2 producing website/build/Worker workspace with provenance and bytes; compare it with the latest verified 489-member source. Preserve every accepted correction, including `RECOVERY_CONFLICT`, Python archives, authored reasons, accessibility, protected Clear, imports, mobile, original art and prior release bytes.
+1. **Authentic source and reconciliation:** recover the complete preview.2 producing website/build/Worker workspace with provenance and bytes; compare it with the latest verified 492-member source (preserving the 489-member receipt as history). Preserve every accepted correction, including `RECOVERY_CONFLICT`, Python archives, authored reasons, accessibility, protected Clear, imports, mobile, original art and prior release bytes.
 2. **Actual authority and privacy:** preserve `UNLICENSED`, the exact read-only `/api/v1/` boundary, private records, and owner-service permission checks. No local roles or example grants may trigger externally owned effects.
 3. **Hosted preview acceptance:** verify real HTTPS package downloads and installed examples, original → reasoned correction → scoped refusal → export → pause/restore → older/conflicting/tampered import refusal → protected Clear → return. Verify native browser behavior and mobile interaction without a test-only SHA bridge; identify physical Safari as an explicit separate check, not an assumed pass.
 4. **Reversible same-project cutover:** refresh Cloudflare deployment identity and route ownership immediately before a write; preserve published preview.1 bytes, preview.2, its recovery path, the independent sharing Worker and a tested rollback. Do not change DNS, infrastructure or GitHub Actions.
