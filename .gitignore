@@ -1,0 +1,34 @@
+# Ordinary local files and dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Build output is not the authoring source
+/dist/
+/build/
+/coverage/
+
+# Founder-controlled source custody: never stage from a recovered ZIP wholesale
+/evidence/
+/release/
+/preserved-public/
+/docs/history/
+/private/
+/recovery/
+/archives/
+/PROJECT_RETURN.txt
+
+# Archived sources, exported packages and receipts require file-by-file review
+*.zip
+*.tgz
+*.tar.gz
+
+# Preserve original artwork; authorize and verify bytes before public GitHub inclusion
+/art/
+/assets/
+/instruments/

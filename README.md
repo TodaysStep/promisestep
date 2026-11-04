@@ -2,25 +2,52 @@
 
 **Build software that keeps promises.**
 
-Refactoring for Kindness, Familiarity, and Visual Metaphor.
+**Refactoring for Kindness, Familiarity, and Visual Metaphor.**
 
-PromiseStep is a developer toolkit and public learning platform for independent work, corrections without erasure, scoped permissions, human judgment, creative authorship, and safe return after interruption.
+PromiseStep connects an accessible public learning experience with a practical developer toolkit. It helps people keep an original, make a correction without erasure, respect a scoped refusal, and return after an interruption.
 
-## Working release and source standing
+**Explore:** [The Method](https://promisestep.com/method.html) · [APIs & SDKs](https://promisestep.com/apis.html) · [Developer Quickstart](https://promisestep.com/docs/quickstart.html) · [Browser Playground](https://promisestep.com/playground.html) · [Nurture Learning](https://promisestep.com/learn.html) · [Small Step School](https://smallstep.care/)
 
-- The currently recorded production developer release is `0.1.0-preview.1` at [promisestep.com](https://promisestep.com/). Cloudflare Pages project: `promisestep`, production branch: `main`, production deployment: `f95c5b61-45e4-45cb-bf2a-302c2a94da83`.
-- A later recovery build exists as a **separate preview**, `61a11ae8-0999-4e55-9a3b-95e2ebcc5ef4`; its full source has not been independently recovered here and is **not** represented as the installed production source.
-- The verified baseline public SDK includes an in-memory JavaScript/TypeScript local core and a limited Python HTTP reference client. Public v1 API routes expose read-only references. These do **not** implement permissions or private writes at owner services.
-- The current public package explicitly states `UNLICENSED`. The project's aim is public/open-source availability, but **no specific redistribution or open-source license has been approved**. Do not infer a copyright or patent grant from repository visibility or downloads.
-- There is no evidence here of npm registry publication, installed Java/Swift feature parity, independent Human Steward commissioning, constitutional approval, or complete owner-service integrations. Those are separate release gates.
-- This repository's source, tests, provenance, and recovery files must be committed and verified against their exact artifacts before anyone relies on it as an independent production-recovery copy. A README alone is not that backup.
+## One practice, three considerations
 
-## Developer journey
+| Kindness | Familiarity | Visual metaphor |
+| --- | --- | --- |
+| Respect the person doing the work. | Begin with what already works and what people recognize. | Make difficult ideas understandable without misrepresenting them. |
 
-Start with [the quickstart](https://promisestep.com/docs/quickstart.html), then use [the local playground](https://promisestep.com/playground.html) to create an original, append a sourced correction, assess a narrow refusal, export and restore, and pause/return without erasing the work. Keep real authorization at each owning service's effect boundary.
+These ideas shape the website, the SDK examples, and the quality-assurance method. They are not a claim that every proposed service is deployed.
 
-## Preservation and privacy
+## Begin with a real working journey
 
-Preserve the existing Cloudflare Pages project, its working production deployment and rollback, the original visual assets and approved copy, and the established social-preview Worker. Do not commit private records, credentials, confidential research, or third-party material without an established right to publish. GitHub Actions are not configured for this project.
+1. **Download and run** the locally executable SDK example.
+2. **Record an original** and preserve its beginning.
+3. **Append a correction** with a reason; do not erase the original.
+4. **Test a scoped refusal** and distinguish the result from service-wide authorization.
+5. **Export, pause, restore and return**, including refusal of conflicting or older archives.
 
-**Status is not approval.** Source-built, locally tested, packaged, deployed, browser-verified and independently reviewed are distinct states. This repository does not confer legal standing, ownership, consent, access rights, or a human review finding.
+[Open the Quickstart](https://promisestep.com/docs/quickstart.html) or [explore the browser lab](https://promisestep.com/playground.html). The public `/api/v1/` reference API is read-only. No local example grants a person permission to perform an action in a separately owned service.
+
+## What belongs on the site
+
+The public presentation connects **software quality assurance**, **Practical Possibilities and Support for Independent Work at the Center for the Dream**, **Song Dev**, **Nurture learning**, and **Small Step School** with the same method. Pages distinguish working SDK behavior from proposed APIs and educational material.
+
+The visual direction is restrained editorial typography, warm paper, clear botanical/brush imagery, original artwork, and responsive navigation. Text and controls remain accessible DOM content, not words embedded in an image. No emojis. The 16 original photographic scenes and existing instrument artwork retain their individual identity.
+
+See [Presentation Blueprint](docs/PRESENTATION_BLUEPRINT.md) and [Editorial & Accessibility](docs/EDITORIAL_AND_ACCESSIBILITY.md).
+
+## Actual source and release standing
+
+| Surface | Established standing |
+| --- | --- |
+| Cloudflare Pages production | Existing `promisestep` project; preview.1-era deployed release remains authoritative until replaced through a verified release. |
+| Later hosted preview.2 | Separate successful deployment; its full *producing* website/build/Worker source has not been recovered. |
+| Latest verified local source | 489-member November 3 recovery-conflict compatibility candidate; source-built, locally tested, packaged, **not deployed**. |
+| SDK | Local JS/TypeScript and recovered Python core; limited Java read-only client. Public packages remain **UNLICENSED**. |
+| Governance | Independent Heard commissioning, Constitutional Review, actual owner-service effects, physical Safari and founder acceptance are open. |
+
+**Important:** This repository's `main` originally contained only a README, and the existing recovery branch held older partial code. This documentation proposal does **not** constitute a verified complete source mirror. Do not replace production from the old branch or publish a private evidence archive. [Technical Architecture](docs/TECHNICAL_ARCHITECTURE.md) · [Source & Release Gates](docs/RELEASE_READINESS.md).
+
+## Preservation first
+
+Preserve the existing domain and Pages project, published release bytes, all original artwork, sharing Worker, established API boundaries, and rollback. Do not add GitHub Actions, private records, credentials, implied service grants, new infrastructure, or a license without founder approval. Source-built, locally tested, hosted, deployed, independently reviewed and accepted are different states.
+
+This README organizes the public research and development journey. It is **not a release announcement**, a grant of software rights, or permission to deploy.
