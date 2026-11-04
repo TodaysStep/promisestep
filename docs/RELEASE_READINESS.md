@@ -1,16 +1,16 @@
 # PromiseStep — verified standing and release gates
 
-**Source standing as of November 3, 2026 (20:05:57 UTC): locally built and tested; NOT deployed.** This document is a scoped receipt index, not production approval.
+**Source standing: November 3, 2026, updated for preview.2 recovery-conflict compatibility; locally built and tested; NOT deployed.** This document is a scoped receipt index, not production approval.
 
 ## Verified local source
 
-- Current independently saved source: `PromiseStep_Preview2_Edit_Continuity_Reconciliation_Source_2026-11-03.zip`.
-- Archive size: **19,258,069 bytes**, 488 ZIP members (487 files + manifest).
-- Source SHA-256: `77118b97903746afe74ace00dae5e9d0cec1f4a76864ff8dfc83dadb71100572`.
-- Rebuilt Worker SHA-256: `fad949e6eaab0ed240a6f735bf69d7f6522e03aef2a31ad1c2cc4dcffead0597`.
-- The source receipt reports **88/88 website tests** and isolated layout/browser checks. The parent receipts report **171/171 JS SDK**, **38/38 Python**, strict TypeScript and focused restore tests; these are historical evidence for unchanged portions, not new hosted acceptance.
+- Current independently saved source: `PromiseStep_Preview2_Recovery_Conflict_Compatibility_Source_2026-11-03.zip`.
+- Archive size: **19,259,614 bytes**, 489 ZIP members (488 files + manifest).
+- Source SHA-256: `3f8668aecebb407e9a3aa9bff133821cf6e8ef05e9d338218cc8f4eb0c8a369a`.
+- Rebuilt Worker SHA-256: `97a52edf3ce8d146edb87d5ac75ee4a2cffd7788c6ef2f99614913de3032fe40`.
+- The source receipt reports **88/88 website tests** (including preview.2 `RECOVERY_CONFLICT` code compatibility on refused import/restore, without changing newer refusal logic) and isolated layout/browser checks. The parent receipts report **171/171 JS SDK**, **38/38 Python**, strict TypeScript and focused restore tests; these are historical evidence for unchanged portions, not new hosted acceptance.
 - Verified package inventory: 81 public static assets, 68 public JSON reference resources, 32 retained original artwork files, 11 byte-identical immutable preview.1 release artifacts.
-- Earlier sources and evidence remain intact; the 471-member authoring candidate is historical, not this source's replacement.
+- The previous 488-member source (`77118b97…`) remains the exact parent. Authentic preview.2 used `RECOVERY_CONFLICT` for unsafe Restore/import, while the parent displayed `RECONCILIATION_REQUIRED`. The current source restores the original code on those two branches; the newer Create guard still uses `RECONCILIATION_REQUIRED`, and import safety is unchanged. Two focused assertions failed against the parent and passed after repair; clean source restoration and changed-path local browser checks passed.\n- Earlier sources and evidence remain intact; the 471-member authoring candidate is historical, not this source's replacement.
 
 ## Provider standing (previous verified observation, not a live lease)
 
@@ -23,7 +23,7 @@
 
 The following are conditions for a production write, not claims that a local build has already earned release authority.
 
-1. **Authentic source and reconciliation:** recover the complete preview.2 producing website/build/Worker workspace with provenance and bytes; compare it with the latest verified 488-member source. Preserve every accepted correction, including `RECOVERY_CONFLICT`, Python archives, authored reasons, accessibility, protected Clear, imports, mobile, original art and prior release bytes.
+1. **Authentic source and reconciliation:** recover the complete preview.2 producing website/build/Worker workspace with provenance and bytes; compare it with the latest verified 489-member source. Preserve every accepted correction, including `RECOVERY_CONFLICT`, Python archives, authored reasons, accessibility, protected Clear, imports, mobile, original art and prior release bytes.
 2. **Actual authority and privacy:** preserve `UNLICENSED`, the exact read-only `/api/v1/` boundary, private records, and owner-service permission checks. No local roles or example grants may trigger externally owned effects.
 3. **Hosted preview acceptance:** verify real HTTPS package downloads and installed examples, original → reasoned correction → scoped refusal → export → pause/restore → older/conflicting/tampered import refusal → protected Clear → return. Verify native browser behavior and mobile interaction without a test-only SHA bridge; identify physical Safari as an explicit separate check, not an assumed pass.
 4. **Reversible same-project cutover:** refresh Cloudflare deployment identity and route ownership immediately before a write; preserve published preview.1 bytes, preview.2, its recovery path, the independent sharing Worker and a tested rollback. Do not change DNS, infrastructure or GitHub Actions.
