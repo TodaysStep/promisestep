@@ -40,7 +40,7 @@ See [Presentation Blueprint](docs/PRESENTATION_BLUEPRINT.md) and [Editorial & Ac
 | --- | --- |
 | Cloudflare Pages production | Existing `promisestep` project; preview.1-era deployed release remains authoritative until replaced through a verified release. |
 | Later hosted preview.2 | Separate successful deployment; its full *producing* website/build/Worker source has not been recovered. |
-| Latest verified local source | 489-member November 3 recovery-conflict compatibility candidate; source-built, locally tested, packaged, **not deployed**. |
+| Latest verified local source | 492-member November 4 Python installation-continuity candidate; independently byte-verified (SHA-256 `99f1c62e0c81633f0311cdbf4de4922c5417f45dec6c9ab54c77d941c7c3bc2a`), locally tested, **not deployed**. Earlier candidates remain preserved. |
 | SDK | Local JS/TypeScript and recovered Python core; limited Java read-only client. Public packages remain **UNLICENSED**. |
 | Governance | Independent Heard commissioning, Constitutional Review, actual owner-service effects, physical Safari and founder acceptance are open. |
 
