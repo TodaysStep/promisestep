@@ -4,7 +4,7 @@ The repository `TodaysStep/promisestep` is the eventual reviewed home of the aut
 
 ## Current boundary
 
-Before this documentation proposal, `main` held a README only and `sdk-public-source-candidate-20261102` contained an older partial 44-entry tree. Neither is the current 488-member source nor the missing complete preview.2 producing workspace. **Do not merge a partial branch as if it were production.**
+Before this documentation proposal, `main` held a README only and `sdk-public-source-candidate-20261102` contained an older partial 44-entry tree. Neither is the current 489-member source nor the missing complete preview.2 producing workspace. **Do not merge a partial branch as if it were production.**
 
 This review branch contains **only public-safe project documentation and a conservative staging guard**. It does not import SDK source code, private research, source ZIPs, internal receipts, photography or generated `dist/` output. That is intentional until provenance, publication rights and source completeness are reconciled.
 
@@ -24,7 +24,7 @@ Only include material whose rights, provenance, privacy and current standing hav
 
 ## Public-source staging boundary
 
-The independently verified 488-member local source contains **205 evidence files, 81 generated `dist/` files, 11 immutable `preserved-public/` files, and 32 original artworks**. This is **not** a 488-file public GitHub publication list. Its local `.gitignore` excluded ordinary caches and `.env` files but did not exclude these founder-controlled evidence or publication categories.
+The independently verified 489-member local source contains **206 evidence files, 81 generated `dist/` files, 11 immutable `preserved-public/` files, and 32 original artworks**. This is **not** a 488-file public GitHub publication list. Its local `.gitignore` excluded ordinary caches and `.env` files but did not exclude these founder-controlled evidence or publication categories.
 
 The review branch's root `.gitignore` now conservatively excludes evidence, generated output, historical bundles, private recovery files, archival packages and original art **from automatic staging**. This is a preventive staging guard, not a privacy or access-control system. Already tracked files and explicit `git add -f` can bypass it. It does not establish source completeness, authoring provenance or a license.
 
